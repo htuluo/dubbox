@@ -39,7 +39,7 @@ import com.alibaba.dubbo.rpc.protocol.AbstractProtocol;
 import com.alibaba.dubbo.rpc.protocol.dubbo.DubboExporter;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class ThriftProtocol extends AbstractProtocol {
 

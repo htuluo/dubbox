@@ -21,7 +21,7 @@ import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class RandomAccessByteArrayOutputStream extends OutputStream {
 

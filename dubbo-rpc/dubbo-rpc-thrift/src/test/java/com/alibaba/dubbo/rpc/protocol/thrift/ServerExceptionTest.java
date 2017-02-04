@@ -22,7 +22,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class ServerExceptionTest extends AbstractTest {
 

@@ -3,7 +3,7 @@ package com.alibaba.dubbo.rpc.protocol.thrift.examples;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class DubboDemoProvider {
 

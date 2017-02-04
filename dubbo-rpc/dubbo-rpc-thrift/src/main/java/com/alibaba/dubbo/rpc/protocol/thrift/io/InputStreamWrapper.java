@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class InputStreamWrapper extends InputStream {
 

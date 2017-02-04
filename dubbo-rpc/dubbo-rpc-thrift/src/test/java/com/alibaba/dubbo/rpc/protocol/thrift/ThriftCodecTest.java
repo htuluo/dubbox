@@ -40,7 +40,7 @@ import com.alibaba.dubbo.rpc.gen.thrift.Demo;
 import com.alibaba.dubbo.rpc.protocol.thrift.io.RandomAccessByteArrayOutputStream;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class ThriftCodecTest {
 

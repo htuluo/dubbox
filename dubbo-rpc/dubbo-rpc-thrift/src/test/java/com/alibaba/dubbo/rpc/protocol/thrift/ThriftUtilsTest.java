@@ -19,7 +19,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class ThriftUtilsTest {
 

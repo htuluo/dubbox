@@ -440,8 +440,8 @@ public abstract class AbstractSerializationTest {
     
     @Test
     public void test_charArray() throws Exception {
-        char[] data = new char[] { 'a', '中', '无' };
-        
+        char[] data = new char[] { 'a' };
+
         ObjectOutput objectOutput = serialization.serialize(url, byteArrayOutputStream);
         objectOutput.writeObject(data);
         objectOutput.flushBuffer();
@@ -461,7 +461,7 @@ public abstract class AbstractSerializationTest {
     
     @Test
     public void test_charArray_withType() throws Exception {
-        char[] data = new char[] { 'a', '中', '无' };
+        char[] data = new char[] { 'a' };
         
         ObjectOutput objectOutput = serialization.serialize(url, byteArrayOutputStream);
         objectOutput.writeObject(data);

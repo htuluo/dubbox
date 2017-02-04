@@ -14,7 +14,7 @@
 package com.alibaba.dubbo.rpc.protocol.thrift;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class ThriftClassNameGenerator implements ClassNameGenerator {
 

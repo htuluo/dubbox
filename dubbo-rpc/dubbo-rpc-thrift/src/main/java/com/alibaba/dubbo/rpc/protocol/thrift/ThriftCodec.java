@@ -69,7 +69,7 @@ import com.alibaba.dubbo.rpc.protocol.thrift.io.RandomAccessByteArrayOutputStrea
  * </ol>
  * </p>
  *
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class ThriftCodec implements Codec2 {
 

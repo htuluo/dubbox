@@ -32,7 +32,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class ThriftInvoker<T> extends AbstractInvoker<T> {
 

@@ -34,7 +34,7 @@ import java.lang.reflect.Field;
 import java.util.Map;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 public class ServiceMethodNotFoundTest extends AbstractTest {
 

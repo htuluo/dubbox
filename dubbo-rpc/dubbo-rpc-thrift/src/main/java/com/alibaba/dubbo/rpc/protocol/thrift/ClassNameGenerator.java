@@ -16,7 +16,7 @@ package com.alibaba.dubbo.rpc.protocol.thrift;
 import com.alibaba.dubbo.common.extension.SPI;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">kimi</a>
+ * @author cougar
  */
 @SPI( DubboClassNameGenerator.NAME )
 public interface ClassNameGenerator {

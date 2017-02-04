@@ -21,7 +21,7 @@ import com.alibaba.dubbo.remoting.RemotingException;
 import java.net.InetSocketAddress;
 
 /**
- * @author <a href="mailto:gang.lvg@alibaba-inc.com">gang.lvg</a>
+ * @author cougar
  */
 public class MockedChannel implements Channel {
 
