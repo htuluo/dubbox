@@ -1,1 +1,1 @@
-protobufmix=com.credithc.serialize.protobuf.Hessian2WithProtobufSerialization
+protobufmix=com.alibaba.dubbo.rpc.protocol.protobuf.Hessian2WithProtobufSerialization
