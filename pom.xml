@@ -138,6 +138,7 @@
         <jackson_version>2.3.3</jackson_version>
         <commons_pool_version>1.6</commons_pool_version>
         <tomcat_embed_version>8.0.11</tomcat_embed_version>
+		<protobuf.version>2.6.1</protobuf.version>
 		<!-- Log libs -->
 		<slf4j_version>1.6.2</slf4j_version>
 		<jcl_version>1.1</jcl_version>
@@ -340,6 +341,11 @@
                   <artifactId>jackson-databind</artifactId>
                   <version>${jackson_version}</version>
               </dependency>
+				<dependency>
+					<groupId>com.google.protobuf</groupId>
+					<artifactId>protobuf-java</artifactId>
+					<version>${protobuf.version}</version>
+				</dependency>
 			<!-- Log libs -->
 			<dependency>
 				<groupId>org.slf4j</groupId>
