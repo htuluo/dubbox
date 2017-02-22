@@ -755,14 +755,14 @@
 	 
     <distributionManagement>
     	<repository>
-            <id>nexus-releases</id>
+            <id>puhui-releases</id>
             <name>Nexus Release Repository</name>
-            <url>http://123.57.65.95:8081/nexus/content/repositories/cfsd/</url>
+            <url>http://118.26.169.199/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>  
-            <id>nexus-snapshots</id>
+            <id>puhui-snapshots</id>
             <name>nexus snapshot repository</name>  
-            <url>http://123.57.65.95:8081/nexus/content/repositories/cfsd/</url>
+            <url>http://118.26.169.199/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 </project>
