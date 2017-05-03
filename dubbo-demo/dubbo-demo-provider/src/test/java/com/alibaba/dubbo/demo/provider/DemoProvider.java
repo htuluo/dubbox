@@ -15,7 +15,6 @@
  */
 package com.alibaba.dubbo.demo.provider;
 
-import com.alibaba.dubbo.config.ProtocolConfig;
 
 public class DemoProvider {
 

@@ -16,11 +16,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<!--<parent> <groupId>com.alibaba</groupId> <artifactId>opensesame</artifactId>
-		<version>2.0</version> </parent> -->
 	<groupId>com.alibaba</groupId>
 	<artifactId>dubbo-parent</artifactId>
-	<version>2.8.6</version>
+	<version>3.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>${project.artifactId}</name>
 	<description>The parent project of dubbo</description>
@@ -40,25 +38,51 @@
 	</organization> 
 	 	<!-- 依赖仓库 -->
 	<repositories>
-		<!--<repository>-->
-			<!--<id>dev-nexus</id>-->
-			<!--<url>http://ob.hemeicloud.com/nexus/content/groups/public</url>-->
-			<!--<snapshots>-->
-				<!--<enabled>true</enabled>  -->
-                <!--<updatePolicy>always</updatePolicy> -->
-			<!--</snapshots>-->
-		<!--</repository>-->
+		<repository>
+			<id>nexus</id>
+			<name>Nexus</name>
+			<url>http://118.26.169.199/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
 	</repositories>
 	<!-- 插件依赖仓库 -->
 	<pluginRepositories>
-		<!--<pluginRepository>-->
-			<!--<id>dev-nexus</id>-->
-			<!--<url>http://ob.hemeicloud.com/nexus/content/groups/public/</url>-->
-			<!--<snapshots>-->
-				<!--<enabled>true</enabled>  -->
-                <!--<updatePolicy>always</updatePolicy> -->
-			<!--</snapshots>-->
-		<!--</pluginRepository>-->
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Nexus</name>
+			<url>http://118.26.169.199/nexus/content/groups/public</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+
+		<pluginRepository>
+			<id>central</id>
+			<name>Central Repository</name>
+			<url>http://repo.maven.apache.org/maven2</url>
+			<layout>default</layout>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</pluginRepository>
 	</pluginRepositories>
 	<modules>
 		<module>dubbo-common</module>
@@ -85,9 +109,6 @@
 					<missing>.project</missing>
 				</file>
 			</activation>
-			<modules>
-				<module>dubbo-test</module>
-			</modules>
 		</profile>
 		<profile>
 			<id>hudson</id>
@@ -119,7 +140,7 @@
 		<sorcerer_version>0.8</sorcerer_version>
 		<zookeeper_version>3.4.6</zookeeper_version>
 		<zkclient_version>0.1</zkclient_version>
-		<curator_version>2.5.0</curator_version>
+		<curator_version>2.10.0</curator_version>
 		<jedis_version>2.1.0</jedis_version>
 		<xmemcached_version>1.3.6</xmemcached_version>
 		<cxf_version>2.6.1</cxf_version>
@@ -526,65 +547,6 @@
 					<forkMode>once</forkMode>
 					<argLine>${argline}</argLine>
 					<systemProperties>
-						<!-- common shared -->
-						<!--<property>-->
-							<!--<name>transporter</name>-->
-							<!--<value>${transporter}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>serialization</name>-->
-							<!--<value>${serialization}</value>-->
-						<!--</property>-->
-						<!--&lt;!&ndash; server side &ndash;&gt;-->
-						<!--<property>-->
-							<!--<name>port</name>-->
-							<!--<value>${port}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>threadpool</name>-->
-							<!--<value>${threadpool}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>threads</name>-->
-							<!--<value>${threads}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>iothreads</name>-->
-							<!--<value>${iothreads}</value>-->
-						<!--</property>-->
-						<!--&lt;!&ndash; client side &ndash;&gt;-->
-						<!--<property>-->
-							<!--<name>server</name>-->
-							<!--<value>${server}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>timeout</name>-->
-							<!--<value>${timeout}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>length</name>-->
-							<!--<value>${length}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>connections</name>-->
-							<!--<value>${connections}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>base</name>-->
-							<!--<value>${base}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>concurrent</name>-->
-							<!--<value>${concurrent}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>runs</name>-->
-							<!--<value>${runs}</value>-->
-						<!--</property>-->
-						<!--<property>-->
-							<!--<name>onerror</name>-->
-							<!--<value>${onerror}</value>-->
-						<!--</property>-->
 					</systemProperties>
 				</configuration>
 			</plugin>
@@ -689,63 +651,9 @@
 	</mailingLists>
 	<developers>
 		<developer>
-			<name>QianXiao(Shawn)</name>
-			<id>shawn.qianx</id>
-			<email>shawn.qianx (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>LiangFei(William)</name>
-			<id>william.liangf</id>
-			<email>william.liangf (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>LiDing(Jerry)</name>
-			<id>ding.lid</id>
-			<email>ding.lid (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>LiuChao(Charles)</name>
-			<id>chao.liuc</id>
-			<email>chao.liuc (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>LiuHaoMin(Ludvik)</name>
-			<id>haoming.liuhm</id>
-			<email>haoming.liuhm (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>ChenLei(Tony)</name>
-			<id>tony.chenl</id>
-			<email>tony.chenl (AT) alibaba-inc.com</email>
-			<roles>
-				<role>Developer</role>
-			</roles>
-			<timezone>+8</timezone>
-		</developer>
-		<developer>
-			<name>LvGang(Kimi)</name>
-			<id>gang.lvg</id>
-			<email>gang.lvg (AT) alibaba-inc.com</email>
+			<name>Cougar</name>
+			<id>couagr</id>
+			<email>suhua161102@credithc.com</email>
 			<roles>
 				<role>Developer</role>
 			</roles>

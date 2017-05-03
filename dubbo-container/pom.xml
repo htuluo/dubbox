@@ -19,7 +19,7 @@
 	<parent>
 		<groupId>com.alibaba</groupId>
 		<artifactId>dubbo-parent</artifactId>
-		<version>2.8.6</version>
+		<version>3.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>dubbo-container</artifactId>
 	<packaging>pom</packaging>
@@ -32,7 +32,7 @@
 		<module>dubbo-container-api</module>
 		<module>dubbo-container-spring</module>
 		<module>dubbo-container-javaconfig</module>
-		<module>dubbo-container-jetty</module>
+		<!--<module>dubbo-container-jetty</module>-->
 		<module>dubbo-container-log4j</module>
 		<module>dubbo-container-logback</module>
 	</modules>
