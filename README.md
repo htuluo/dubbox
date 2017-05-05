@@ -7,6 +7,7 @@ Dubbo是一个高性能的分布式RPC框架，主要包括一下部分:
 * Registry(注册中心): a service directory framework for service registration and service event publish/subscription
 
 
+
 ### 和Dubbo 2.x的区别
 
 * Java 8 only, hessian序列化支持Java 8 Optional
